@@ -3,6 +3,5 @@ layout: home
 title: "Home"
 ---
 
-This theme allows an academic person to showcase their research interests, publications, research group, curriculum vitae, any courses that they may be teaching, or anything else they may want to put out into the world.
-
-Academics can use this home page to describe their research interests, display their latest publications, or provide an introduction to their research group.
+<p> Caterina Blomgren is a PhD student at Linköping University, specializing in data visualization with a focus on game design and feminist theory. Based in Norrköping, Sweden, and originally from Kyiv, Ukraine, she blends her background in graphic design with innovative approaches to game mechanics and procedural rhetoric. </p>
+<p> Caterina is passionate about exploring how systems and design can convey messages of inclusivity and equity. Outside of her academic pursuits, she cherishes her time with her family and enjoys the company of her cats. </p>

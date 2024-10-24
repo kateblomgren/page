@@ -1,6 +1,6 @@
-# academic
+# Caterina Blomgren
 
-### A Jekyll theme for academia
+### PhD Student
 
 ![Academic Screenshot](https://raw.githubusercontent.com/LeNPaul/academic/gh-pages/screenshot.png)
 
