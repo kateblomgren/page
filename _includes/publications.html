@@ -12,13 +12,13 @@
   
 
     {% if page.title == "Home" %}
-      {% for item in site.data.publications.featured %}
+      {% for item in site.publications.featured %}
         <p><a href="{{site.github.url}}/{{publication.permalink}}"> {{ item.name }} </a></p>
       {% endfor %}
     
   
     {% else %}
-      {% for item in site.data.publications.index %}
+      {% for item in site.publications.index %}
         <p><a href="{{site.github.url}}/{{publication.permalink}}"> {{ item.name }} </a></p>
       {% endfor %} 
     {% endif %}
