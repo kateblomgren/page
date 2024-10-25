@@ -17,8 +17,8 @@ courses:
 social:
 - {icon: 'github', link: 'https://github.com/kateblomgren'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/katierinablomgren/'}
-- {icon: 'google, link: 'https://scholar.google.com/citations?user=dQbMpv8AAAAJ&hl=en''}
+- {icon: 'google', link: 'https://scholar.google.com/citations?user=dQbMpv8AAAAJ&hl=en'}
 
 contacts:
-- {name: 'Caterina Blomgren', title: 'PhD Student', department: 'MIT', institution: 'LiU', email: 'caterina.blomgren@liu.se', image: 'assets/img/blomgren.jpg'}
-
+- { name: 'Caterina Blomgren', title: 'PhD Student', department: 'MIT', institution: 'Linköping University', email: 'caterina.blomgren@liu.se', office: 'Kopparhammaren 2, room 3053, Campus Norrköping\', image: 'assets/img/sticker-girl.png'
+}

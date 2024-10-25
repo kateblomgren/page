@@ -1,37 +1,62 @@
 ---
 layout: default
 ---
-<div class="row g-2 mb-5">
-  <div class="row  align-items-center" style="margin-bottom: 10;">
-    <div class="col-md-2">
-    <img src="/assets/img/sticker-search.png" alt="researchsticker" width="100%"> 
-    </div>
-    <div class="col-md-8" > 
-        <h3 class="fw-bold">Research Interests </h3> 
-        <p>{{"Feminist Theory, Game Design, Data Visualisation, Design, Media Studies"}}</p>
-    </div>
-    <div class="col-md-2">
-      <img src="/assets/img/sticker-hand.png" alt="researchsticker" width="100%"> 
-      </div>
-  </div>
-</div>
-<div class="row g-5 mb-5">
+
+<div class="row mb-5 align-items-center">
   <div class="col-md-8">
     <h3 class="fw-bold">About me</h3>
     {{ content }}
   </div>
   <div class="col-md-4">
-    <img src="{{ site.github.url }}/assets/img/blomgren.png" alt="Home" width="100%">
+    <img src="{{ site.github.url }}/assets/img/blomgren.png" alt="Home" width="100%" max width="200px">
+  </div>
+
+  <div class="row mb-3 align align-items-center">
+  </div>
+  <div class="col-md-1">
+  </div> 
+    <div class="row align-items-center mb-5" >
+      <div class="col-md-1">
+        <img src="/assets/img/sticker-search.png" alt="researchsticker1" width="100%" max width="200px"> 
+      </div>
+      <div class="col-md-8" > 
+          <h3 class="fw-bold">Research Interests </h3> 
+          <p>{{"Feminist Theory, Game Design, Data Visualisation, Design, Media Studies"}}</p>
+      </div>
+      <div class="col-md-1">
+        <img src="/assets/img/sticker-hand.png" alt="researchsticker2" width="100%" max width="200px"> 
+      </div>
+      <div class="col-md-1">
+      </div> 
+    </div>
+  </div>
+
+<div class="row ">
+
+<div class="col-md-6">
+  <div >
+    {% include publications.html %}
   </div>
 </div>
 
-{% include publications.html %}
-
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">News</h3>
-    {% for post in site.posts %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
-    {% endfor %}
+<div class="col-md-6 align-items-top">
+  <div>
+    <div class="row align-items-center  mb-3">
+      <div class="col-md-2">
+        <img src="/assets/img/sticker-news.png" alt="news" width="100%" max width="200px">
+      </div>
+      <div class="col-md-4">
+       <h3 class="fw-bold">News</h3>
+      </div>
+    </div>
+    <div >
+      {% for post in site.posts %}
+        <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+      {% endfor %}
+    </div>
   </div>
 </div>
+
+</div>  
+
+

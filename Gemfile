@@ -6,4 +6,6 @@ gemspec
 gem "webrick", "~> 1.8"
 
 gem "faraday-retry", "~> 2.2"
-gem "github-pages", "~> 3.10.0", group: :jekyll_plugins
+
+gem "github-pages", "~> 232", group: :jekyll_plugin
+gem "rdiscount"
