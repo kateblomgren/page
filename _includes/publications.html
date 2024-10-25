@@ -13,13 +13,13 @@
 
     {% if page.title == "Home" %}
       {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+        <p><a href="{{ item.page }}">{{ item.name }}</a></p>
       {% endfor %}
     
   
     {% else %}
       {% for item in site.data.publications.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+        <p><a href="{{ item.page }}">{{ item.name }}</a></p>
       {% endfor %}
     {% endif %}
 
@@ -30,6 +30,9 @@
       <div class="col-md-10">
         <h3 class="fw-bold ">Talks</h3>
       </div>
+        {% for item in site.data.talks.index %}
+          <p>{{ item.page }} {{ item.name }}</p>
+        {% endfor %}
     </div>
 
   
