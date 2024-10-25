@@ -13,14 +13,14 @@
 
     {% if page.title == "Home" %}
       {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.permalink }}"> {{ item.name }} </a></p>
+        <p><a href="{{ site.github.url }}/{{ item.permalink }}"> {{ item.name }} </a></p>
       {% endfor %}
     
   
     {% else %}
       {% for item in site.data.publications.index %}
-        <p><a href="{{ item.permalink }}"> {{ item.name }} </a></p>
-      {% endfor %}
+        <p><a href="{{ site.github.url }}/{{ item.permalink }}"> {{ item.name }} </a></p>
+      {% endfor %} 
     {% endif %}
 
     <div class="row align-items-center mb-2" ">
@@ -31,7 +31,7 @@
         <h3 class="fw-bold ">Talks</h3>
       </div>
         {% for item in site.data.talks.index %}
-          <p><a href="{{ item.permalink }}">{{ item.name }}</a></p>
+          <p><a href="{{ site.github.url }}/{{ post.title }}</a>">{{ item.name }}</a></p>
         {% endfor %}
     </div>
 
