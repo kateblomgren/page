@@ -15,10 +15,10 @@ courses:
 - {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
-- {icon: 'github', link: 'https://github.com/LeNPaul'}
-- {icon: 'threads', link: 'https://twitter.com/paululele'}
-- {icon: 'instagram', link: 'https://instagram.com/paululele'}
-- {icon: 'linkedin', link: 'https://linkedin.com/in/lenpaul'}
+- {icon: 'github', link: 'https://github.com/kateblomgren'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/katierinablomgren/'}
+- {icon: 'google, link: 'https://scholar.google.com/citations?user=dQbMpv8AAAAJ&hl=en''}
 
 contacts:
-- {name: 'Caterina Blomgren', title: 'PhD Student', department: 'MIT', institution: 'LiU', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'caterina.blomgren@liu.se', image: 'assets/img/blomgren.jpg'}
+- {name: 'Caterina Blomgren', title: 'PhD Student', department: 'MIT', institution: 'LiU', email: 'caterina.blomgren@liu.se', image: 'assets/img/blomgren.jpg'}
+
