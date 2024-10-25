@@ -3,7 +3,7 @@
     
     <div class="row align-items-center mb-2" ">
       <div class="col-md-2">
-        <img src="/assets/img/sticker_publications.png" alt="publications" width="100%">
+        <img src="{{site.github.url}}/assets/img/sticker_publications.png" alt="publications" width="100%">
       </div>
       <div class="col-md-10">
         <h3 class="fw-bold ">Publications</h3>
@@ -13,25 +13,25 @@
 
     {% if page.title == "Home" %}
       {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.page }}">{{ item.name }}</a></p>
+        <p><a href="{{ item.permalink }}"> {{ item.name }} </a></p>
       {% endfor %}
     
   
     {% else %}
       {% for item in site.data.publications.index %}
-        <p><a href="{{ item.page }}">{{ item.name }}</a></p>
+        <p><a href="{{ item.permalink }}"> {{ item.name }} </a></p>
       {% endfor %}
     {% endif %}
 
     <div class="row align-items-center mb-2" ">
       <div class="col-md-2">
-        <img src="/assets/img/sticker-talk.png" alt="talks" width="100%">
+        <img src="{{site.github.url}}/assets/img/sticker-talk.png" alt="talks" width="100%">
       </div>
       <div class="col-md-10">
         <h3 class="fw-bold ">Talks</h3>
       </div>
         {% for item in site.data.talks.index %}
-          <p>{{ item.page }} {{ item.name }}</p>
+          <p><a href="{{ item.permalink }}">{{ item.name }}</a></p>
         {% endfor %}
     </div>
 
