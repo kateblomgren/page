@@ -12,3 +12,13 @@ body {
 body a {
   color: $linkColor
 }
+
+h3 {
+  color: #000000;
+}
+
+h3:hover {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}

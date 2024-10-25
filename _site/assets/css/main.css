@@ -8,4 +8,14 @@ body a {
   color: #441eb9 !important;
 }
 
+h3 {
+  color: #000000;
+}
+
+h3:hover {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+
 /*# sourceMappingURL=main.css.map */
