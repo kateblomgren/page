@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: "Are we ready to talk about feminist game mechanics?"
 key: 2023-thesis
-permalink: /2023-thesis
+permalink: /2023-thesis.html
 ---
 
 <h2>Abstract [en]</h2>
