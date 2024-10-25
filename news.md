@@ -8,4 +8,4 @@ title: "news"
       <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
     {% endfor %}
   
-</div>
+</div> 
