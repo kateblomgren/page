@@ -2,21 +2,26 @@
 layout: default
 ---
 <div class="row g-2 mb-5">
-  <div class="col-md-6">
-    <img src="_site/assets/img/sticker-search.png" alt="Home">
-  </div>
-  <div class="col-md-5">
-    <h3 class="fw-bold">Research Interests</h3>
-    <p>Feminist Theory, Game Design, Data Visualisation, Design, Media Studies</p>
+  <div class="row  align-items-center" style="margin-bottom: 10;">
+    <div class="col-md-2">
+    <img src="/assets/img/sticker-search.png" alt="researchsticker" width="100%"> 
+    </div>
+    <div class="col-md-8" > 
+        <h3 class="fw-bold">Research Interests </h3> 
+        <p>{{"Feminist Theory, Game Design, Data Visualisation, Design, Media Studies"}}</p>
+    </div>
+    <div class="col-md-2">
+      <img src="/assets/img/sticker-hand.png" alt="researchsticker" width="100%"> 
+      </div>
   </div>
 </div>
 <div class="row g-5 mb-5">
-  <div class="col-md-6">
+  <div class="col-md-8">
     <h3 class="fw-bold">About me</h3>
     {{ content }}
   </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/assets/img/blomgren.jpg" alt="Home" width="100%">
+  <div class="col-md-4">
+    <img src="{{ site.github.url }}/assets/img/blomgren.png" alt="Home" width="100%">
   </div>
 </div>
 
