@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: publication
 title: "Are we ready to talk about feminist game mechanics?"
 key: 2023-thesis
 permalink: /2023-thesis.html
