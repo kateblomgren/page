@@ -10,5 +10,5 @@ social:
 - {icon: 'google', link: 'https://scholar.google.com/citations?user=dQbMpv8AAAAJ&hl=en'}
 
 contact:
-- { name: 'Caterina Blomgren', title: 'PhD Student', department: 'MIT', institution: 'Linköping University', email: 'caterina.blomgren@liu.se', office: 'Kopparhammaren 2, room 3053, Campus Norrköping\', image: 'assets/img/sticker-girl.png'
+- { name: 'Caterina Blomgren', title: 'PhD Student', department: 'MIT', institution: 'Linköping University', email: 'caterina.blomgren@liu.se', office: 'Kopparhammaren 2, room 3053, Campus Norrköping', image: 'assets/img/sticker-girl.png'
 }
