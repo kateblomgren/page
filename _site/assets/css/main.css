@@ -1,15 +1,17 @@
 body {
-  background: #ffffff;
-  color: #000000;
+  background: whitesmoke;
+  color: indigo;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 body a {
   color: #441eb9 !important; }
 
+a:hover {
+  background-color: lavender; }
+
 h3 {
-  color: #000000; }
+  color: indigo; }
 
 h3:hover {
-  background-color: black;
   font-weight: bold;
-  color: white; }
+  color: rebeccapurple; }

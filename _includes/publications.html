@@ -10,9 +10,10 @@
       </div>
     </div>
     <ul>
-      {% assign filtered_posts = site.posts | where: 'publication', page.what %}
-      {% for post in filtered_posts %}
+      {% for post in site.posts %}
+      {% if post.what contains 'publication' %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
       {% endfor %}
     </ul> 
       
@@ -26,11 +27,13 @@
       <div class="col-md-10">
         <h3 class="fw-bold ">Talks</h3>
       </div>
-      <div>
-        {% for post in site.tags.talk %}
-          <p><a href="{{site.github.url}}/{{post.title}}"> {{post.title}} </a> </p>
+      <ul>
+        {% for post in site.posts %}
+        {% if post.what contains 'talk' %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
         {% endfor %}
-      </div>
+      </ul> 
     </div>
 
   

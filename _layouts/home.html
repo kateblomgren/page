@@ -21,7 +21,9 @@ layout: default
       </div>
       <div class="col-md-8" > 
           <h3 class="fw-bold">Research Interests </h3> 
-          <p>{{"Feminist Theory, Game Design, Data Visualisation, Design, Media Studies"}}</p>
+          <ul>
+          <li>Feminist Theory</li><li>Game Design</li><li>Data Visualisation</li><li>Design</li><li>Media Studies</li>
+          </ul> 
       </div>
       <div class="col-md-1">
         <img src="{{site.github.url}}/assets/img/sticker-hand.png" alt="researchsticker2" width="100%" max width="200px"> 
@@ -51,7 +53,9 @@ layout: default
     </div>
     <div >
       {% for post in site.posts %}
-        <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+      {% if post.what contains 'news' %}
+        <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%-d %B, %Y" }}</p>
+      {% endif %}
       {% endfor %}
     </div> 
   </div>
