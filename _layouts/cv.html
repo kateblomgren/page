@@ -3,21 +3,22 @@ layout: cvdefault
 ---
 <div class="row">
 <div class="col-sm-3">
-    
-    <li>
-        <a href="#work">jump link</a>
-      <a href="#education">Education</a>
-      <a href="#workexpirience">Work</a>
-    </li>
+    <div class="nav">
+    <ul>
+      <li><a href="{{ site.github.url }}/cv#academicexperience">Academic Experience</a></li>
+      <li><a href="{{ site.github.url }}/cv#education">Education</a></li>
+      <li><a href='{{ site.github.url }}/cv#workexpkateblomgren'>Work Expirience</a></li>
+    </ul>
     </div>
+</div>
 
 <div class="col-sm-9">
 <div>
     <div class="row" style="height: 20px;"></div>
 
-    <a class="anchor" id="#academicexperience"></a>   
+    
     <div class="card">
-         <div class="card-header"><h4>Academic Experience</h4></div>
+         <div class="card-header"><a name='academicexperience'><h3>Academic Expirience</h3></a></div>
          
         <div class="card-body">
            {% for section in site.data.cv.academic-experience %}
@@ -28,11 +29,11 @@ layout: cvdefault
         </div>
        </div>
 
-       <div class="anchor" id="#education"></div>
+       
        <div class="card" >
          
            <div class="card-header">
-          </a><h4>Education</h4> </div>
+            <a name='education'><h3>Education</h3></a></div>
          
         <div class="card-body">
            {% for section in site.data.cv.education %}
@@ -44,10 +45,10 @@ layout: cvdefault
          
        </div>
    
-       <div id="#work">Work Expirience</div>
+       
        <div class="card">
          
-          <div class="card-header">  </div>
+          <div class="card-header"> <a name='workexpkateblomgren'><h3>Work Expirience</h3></a> </div>
          
          <div class="card-body">
            {% for section in site.data.cv.work %}
