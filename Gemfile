@@ -9,3 +9,4 @@ gem "faraday-retry", "~> 2.2"
 
 gem "github-pages", "~> 232", group: :jekyll_plugin
 gem "rdiscount"
+gem "jekyll-toc"

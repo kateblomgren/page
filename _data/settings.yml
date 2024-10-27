@@ -3,6 +3,7 @@ menu:
 - {name: ' cv ', url: '/cv'}
 - {name: 'contact', url: '/contact'}
 - {name: 'news', url: '/news'}
+- {name: 'cvtest', url: '/cvtest'}
 
 social:
 - {icon: 'github', link: 'https://github.com/kateblomgren'}
