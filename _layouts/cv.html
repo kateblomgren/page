@@ -1,51 +1,17 @@
 ---
-layout: default
+layout: cvdefault
+
 ---
 
 {{ content }}
+<div class="row">
 
-
-<div class="row g-5 mb-5">
-  <div>
- <div class="row" style="height: 20px;"></div>
-    <div class="row g-5 mb-5" style="background-color: #E6E6FA60">
-      <div class="col-md-2">
-        <h4>Academic Experience</h4>
-      </div>
-      <div class="col-md-10">
-        {% for section in site.data.cv.academic-experience %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.university }} | {{section.place}}</p> 
-          <p>{{section.year}}</p>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="row g-5 mb-5" >
-      <div class="col-md-2">
-        <h4>Education</h4>
-      </div>
-      <div class="col-md-10">
-        {% for section in site.data.cv.education %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.university }} | {{section.place}}</p> 
-          <p>{{section.year}}</p>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="row g-5 mb-5" style="background-color: #E6E6FA60">
-      <div class="col-md-2">
-        <h4>Work Expirience</h4>
-      </div>
-      <div class="col-md-10">
-        {% for section in site.data.cv.work %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.company }} </p> 
-            <p>{{section.year}}</p> 
-          <p>{{section.description}}</p>
-        {% endfor %}
-      </div>
-    </div>
    
-  </div>
+
+<div class=col>
+{% include cv.html %}
+{{ content | inject_anchors }}
 </div>
+
+</div>
+
