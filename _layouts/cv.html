@@ -1,17 +1,65 @@
 ---
 layout: cvdefault
-
 ---
-
-{{ content }}
 <div class="row">
+<div class="col-sm-3">
+    
+    <li>
+        <a href="#work">jump link</a>
+      <a href="#education">Education</a>
+      <a href="#workexpirience">Work</a>
+    </li>
+    </div>
 
+<div class="col-sm-9">
+<div>
+    <div class="row" style="height: 20px;"></div>
+
+    <a class="anchor" id="#academicexperience"></a>   
+    <div class="card">
+         <div class="card-header"><h4>Academic Experience</h4></div>
+         
+        <div class="card-body">
+           {% for section in site.data.cv.academic-experience %}
+             <p class="fw-bold">{{ section.title }}</p>
+             <p>{{ section.university }} | {{section.place}}</p> 
+             <p>{{section.year}}</p>
+           {% endfor %}
+        </div>
+       </div>
+
+       <div class="anchor" id="#education"></div>
+       <div class="card" >
+         
+           <div class="card-header">
+          </a><h4>Education</h4> </div>
+         
+        <div class="card-body">
+           {% for section in site.data.cv.education %}
+             <p class="fw-bold" >{{ section.title }}</p>
+             <p>{{ section.university }} | {{section.place}}</p> 
+             <p class="border-bottom">{{section.year}}</p>
+           {% endfor %}
+        </div>
+         
+       </div>
    
-
-<div class=col>
-{% include cv.html %}
-{{ content | inject_anchors }}
+       <div id="#work">Work Expirience</div>
+       <div class="card">
+         
+          <div class="card-header">  </div>
+         
+         <div class="card-body">
+           {% for section in site.data.cv.work %}
+           <p class="border-top "> </p>
+             <p class="fw-bold mt-3 ">{{ section.title }}</p>
+             <p>{{ section.company }} </p> 
+               <p>{{section.year}}</p> 
+             <p>{{section.description}}</p>
+           {% endfor %}
+        </div>
+      
+        </div>
+        </div>
+    </div>
 </div>
-
-</div>
-
