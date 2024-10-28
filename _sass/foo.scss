@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-  background-color: lavender;
+  background-color: rgba(127, 255, 212, 0.3);
 }
 
 .nav {
@@ -97,3 +97,11 @@ p.informationtitle {
   background-color: lavender;
   line-height: 1.5;
   }
+
+table {
+    border: none;
+  }
+.card {
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 5px rgba(127, 255, 212, 0.3) ;
+}
