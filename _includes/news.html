@@ -1,17 +1,22 @@
 <div>
   <div class="row align-items-center  mb-3">
-    <div class="col-md-2">
-      <img src="{{site.github.url}}/assets/img/sticker-news.png" alt="news" width="100%" max width="200px">
-    </div>
-    <div class="col-md-auto">
-     <h3 class="fw-bold">News</h3>
-    </div>
-  </div>
-  <div >
-    {% for post in site.posts %}
-    {% if post.what contains 'news' %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%-d %B, %Y" }}</p>
-    {% endif %}
-    {% endfor %} 
-  </div> 
+
+    <table>
+      <tr>
+        <th><img src="{{site.github.url}}/assets/img/sticker-news.png" alt="news" width="60px"></th>
+        <th><a href="{{site.github.url}}/news"><h3 class="fw-bold">News</h3></a> </th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>
+          <li class="fw-normal">
+            {% for post in site.posts %}
+            {% if post.what contains 'news' %}
+            <a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%-d %B, %Y" }}
+            {% endif %}
+            {% endfor %}
+        </li>
+         </th>
+      </tr>
+    </table>
 </div>

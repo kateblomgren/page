@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<div class="container">
 <div class="row mb-5 align-items-top">
 
   <div class="col-md-8">
@@ -37,35 +37,37 @@ layout: default
       </div>
     </div>
 </div>
-
-<div class="row ">
-
-<div class="col-md-6">
-  <div >
-    {% include publications.html %}
-  </div>
 </div>
 
-<div class="col-md-6 align-items-top">
-  <div>
-    <div class="row align-items-center  mb-3">
-      <div class="col-md-2">
-        <img src="{{site.github.url}}/assets/img/sticker-news.png" alt="news" width="100%" max width="200px">
-      </div>
-      <div class="col-md-4">
-       <h3 class="fw-bold">News</h3>
-      </div>
+<div class="container">
+<div class="row">
+  <div clas="col-4">
+    <div style="width: 100%;">
+      {% include publications.html %}
     </div>
-    <div >
-      {% for post in site.posts %}
-      {% if post.what contains 'news' %}
-        <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%-d %B, %Y" }}</p>
-      {% endif %}
-      {% endfor %}
-    </div> 
   </div>
-</div>
+
+  <div class="col-md-4">
+    <table style="width: 100%;">
+      <tr>
+        <th><img src="{{site.github.url}}/assets/img/sticker-news.png" alt="news" width="60px"></th>
+        <th><a href="{{site.github.url}}/news"><h3 class="fw-bold">News</h3></a> </th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>
+          <li class="fw-normal">
+            {% for post in site.posts %}
+            {% if post.what contains 'news' %}
+            <a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%-d %B, %Y" }}
+            {% endif %}
+            {% endfor %}
+        </li>
+         </th>
+      </tr>
+    </table>
+  </div>
 
 </div>  
-
+</div>
 

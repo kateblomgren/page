@@ -1,40 +1,42 @@
 <div class="row  mb-5">
   
     
-    <div class="row align-items-center mb-2" ">
-      <div class="col-md-2">
-        <img src="{{site.github.url}}/assets/img/sticker_publications.png" alt="publications" width="100%">
-      </div>
-      <div class="col-md-10">
-        <h3 class="fw-bold ">Publications</h3>
-      </div>
-    </div>
-    <ul>
-      {% for post in site.posts %}
-      {% if post.what contains 'publication' %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endif %}
-      {% endfor %}
-    </ul> 
-      
-    
-   
-
-    <div class="row align-items-center mb-2" ">
-      <div class="col-md-2">
-        <img src="{{site.github.url}}/assets/img/sticker-talk.png" alt="talks" width="100%">
-      </div>
-      <div class="col-md-10">
-        <h3 class="fw-bold ">Talks</h3>
-      </div>
-      <ul>
-        {% for post in site.posts %}
-        {% if post.what contains 'talk' %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-      </ul> 
-    </div>
-
+    <div class="row mb-2" ">
+      <table>
+        <tr>
+          <th><img src="{{site.github.url}}/assets/img/sticker_publications.png" alt="publications" width="60px"></th>
+          <th><a href="{{site.github.url}}/publications"><h3 class="fw-bold ">Publications</h3></a> </th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>
+            <li>
+            {% for post in site.posts %}
+            {% if post.what contains 'publication' %}
+              <a href="{{ post.url }}" class="fw-normal">{{ post.title }}</a>
+            {% endif %}
+            {% endfor %}
+          </li>
+           </th>
+        </tr>
+        <tr style="height: 30px;"><th></th><th></th></tr>
+        <tr>
+          <th><img src="{{site.github.url}}/assets/img/sticker-talk.png" alt="talks" width="60px"></th>
+          <th><a href="{{site.github.url}}/publications"><h3 class="fw-bold"> Talks </h3></a> </th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>
+            <li>
+            {% for post in site.posts %}
+            {% if post.what contains 'talk' %}
+            <a href="{{ post.url }}" class="fw-normal">{{ post.title }}</a>
+            {% endif %}
+            {% endfor %}
+          </li>
+          </th>
+        </tr>
+        <tr style="height: 30px;"><th></th><th></th></tr>
+      </table>
   
-</div>
+    </div>
