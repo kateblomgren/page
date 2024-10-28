@@ -30,3 +30,34 @@ h3:hover {
   background-color: red;
   /* For browsers that do not support gradients */
   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); }
+
+.button {
+  background-color: rebeccapurple;
+  border: none;
+  color: whitesmoke;
+  font-size: large;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  cursor: pointer; }
+
+.button:hover {
+  background-color: lavender;
+  font-size: large;
+  color: indigo;
+  border: 2px solid rebeccapurple;
+  border-radius: 10px; }
+
+p.information {
+  font-size: small;
+  margin-top: 0; }
+
+p.informationtitle {
+  font-size: small;
+  font-weight: bold;
+  background-color: lavender;
+  line-height: 1.5; }
