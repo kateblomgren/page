@@ -17,5 +17,16 @@ h3:hover {
   color: rebeccapurple; }
 
 .nav {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  color: indigo;
+  line-height: 2;
   position: sticky;
   top: 10px; }
+
+#grad1 {
+  height: 55px;
+  background-color: red;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); }

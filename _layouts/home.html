@@ -2,36 +2,41 @@
 layout: default
 ---
 
-<div class="row mb-5 align-items-center">
+<div class="row mb-5 align-items-top">
+
   <div class="col-md-8">
-    <h3 class="fw-bold">About me</h3>
-    {{ content }}
-  </div>
-  <div class="col-md-4">
-    <img src="{{ site.github.url}}/assets/img/blomgren.png" alt="Home" width="100%" max width="200px">
+    
+      {{ content }} 
   </div>
 
-  <div class="row mb-3 align align-items-center">
-  </div>
-  <div class="col-md-1">
-  </div> 
-    <div class="row align-items-center mb-5" >
-      <div class="col-md-1">
-        <img src="{{site.github.url}}/assets/img/sticker-search.png" alt="researchsticker1" width="100%" max width="200px"> 
+  <div class="col-md-1"></div>
+
+  <div class="col-md-3" > 
+      <div>
+        <style>
+          table {
+            width: 100%;
+            border: none;
+          }
+          </style>
+          
+          <table>
+            <tr>
+              <th><h3 class="fw-bold"> Research Interests </h3> </th>
+              <th><img class="mr-15px" src="{{site.github.url}}/assets/img/sticker-search.png" alt="researchsticker1" width="60px"></th>
+            </tr>
+            <tr>
+              <th>
+                <ul class="fw-normal">
+                <li>Feminist Theory</li><li>Game Design</li><li>Data Visualisation</li><li>Design</li><li>Media Studies</li>
+              </ul>
+              </th>
+              <th></th>
+            </tr>
+          </table>
       </div>
-      <div class="col-md-8" > 
-          <h3 class="fw-bold">Research Interests </h3> 
-          <ul>
-          <li>Feminist Theory</li><li>Game Design</li><li>Data Visualisation</li><li>Design</li><li>Media Studies</li>
-          </ul> 
-      </div>
-      <div class="col-md-1">
-        <img src="{{site.github.url}}/assets/img/sticker-hand.png" alt="researchsticker2" width="100%" max width="200px"> 
-      </div>
-      <div class="col-md-1">
-      </div> 
     </div>
-  </div>
+</div>
 
 <div class="row ">
 
